@@ -1,7 +1,7 @@
 secretGenerator:
 - name: mysql-pass
   literals:
-  - password=${serviceVariable.var_name}
+  - password=${serviceVariable.mysql-pass}
 resources:
   - mysql-deployment.yaml
   - wordpress-deployment.yaml
