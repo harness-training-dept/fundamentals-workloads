@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ${serviceVariable.var_name}
+  name: ${serviceVariable.namespace}
