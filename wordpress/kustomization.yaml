@@ -4,5 +4,6 @@ secretGenerator:
   literals:
   - password=donotguess
 resources:
+  - namespace.yaml
   - mysql-deployment.yaml
   - wordpress-deployment.yaml
