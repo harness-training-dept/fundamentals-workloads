@@ -35,7 +35,6 @@ Create chart name and version as used by the chart label.
 Common labels
 */}}
 {{- define "mychart.labels" -}}
-release: {{ .Release.Name }}
 helm.sh/chart: {{ include "mychart.chart" . }}
 {{ include "mychart.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
@@ -48,6 +47,7 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 Selector labels
 */}}
 {{- define "mychart.selectorLabels" -}}
+release: {{ .Release.Name }}
 app.kubernetes.io/name: {{ include "mychart.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end -}}
