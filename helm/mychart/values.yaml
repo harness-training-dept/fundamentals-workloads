@@ -7,7 +7,7 @@ createNamespace: true
 namespace: ${infra.kubernetes.namespace}
 image:
   repository: nginx
-  pullPolicy: IfNotPresent
+  pullPolicy: true
 
 imagePullSecrets: []
 nameOverride: ""
